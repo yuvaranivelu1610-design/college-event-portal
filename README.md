@@ -57,3 +57,4 @@ college-event-portal/
 ├── style.css           # Website Styling
 └── script.js            # JavaScript Functionality
 screenshot<img width="1920" height="1080" alt="Screenshot 2026-10-01 083002" src="https://github.com/user-attachments/assets/40a41fa1-7388-4a20-a52e-4e4ef389bbd7" />
+link https://yuvaranivelu1610-design.github.io/college-event-portal/
