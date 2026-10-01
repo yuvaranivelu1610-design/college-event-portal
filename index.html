@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>College Fest 2026</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#registration">Registration</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to College Fest 2026</h2>
+        <p>Celebrate Talent, Creativity and Innovation</p>
+        <button onclick="scrollToRegistration()">Register Now</button>
+    </section>
+
+    <!-- Announcements -->
+    <section class="section">
+        <h2>Latest Announcements</h2>
+        <p>Registration is now open for all college festival events.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <h2>Our Events</h2>
+
+        <div class="event-container">
+
+            <div class="event-card">
+                <h3>Paper Presentation</h3>
+                <p>Date: 10 October 2026</p>
+                <p>Time: 10:00 AM</p>
+                <p>Venue: Seminar Hall</p>
+                <p>Present your innovative ideas and research.</p>
+                <button onclick="selectEvent('Paper Presentation')">
+                    Register
+                </button>
+            </div>
+
+            <div class="event-card">
+                <h3>Coding Contest</h3>
+                <p>Date: 10 October 2026</p>
+                <p>Time: 11:00 AM</p>
+                <p>Venue: Computer Lab</p>
+                <p>Show your programming skills.</p>
+                <button onclick="selectEvent('Coding Contest')">
+                    Register
+                </button>
+            </div>
+
+            <div class="event-card">
+                <h3>Quiz Competition</h3>
+                <p>Date: 11 October 2026</p>
+                <p>Time: 10:00 AM</p>
+                <p>Venue: Auditorium</p>
+                <p>Test your knowledge and speed.</p>
+                <button onclick="selectEvent('Quiz Competition')">
+                    Register
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section">
+        <h2>Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Time</th>
+                <th>Venue</th>
+            </tr>
+
+            <tr>
+                <td>10 Oct 2026</td>
+                <td>Paper Presentation</td>
+                <td>10:00 AM</td>
+                <td>Seminar Hall</td>
+            </tr>
+
+            <tr>
+                <td>10 Oct 2026</td>
+                <td>Coding Contest</td>
+                <td>11:00 AM</td>
+                <td>Computer Lab</td>
+            </tr>
+
+            <tr>
+                <td>11 Oct 2026</td>
+                <td>Quiz Competition</td>
+                <td>10:00 AM</td>
+                <td>Auditorium</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <h2>Event Gallery</h2>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="College Event">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678" alt="College Festival">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Event">
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration" class="section">
+        <h2>Event Registration</h2>
+
+        <form id="registrationForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label>Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="Enter your mobile number">
+
+            <label>Department / Year</label>
+            <input type="text" id="department" placeholder="Example: ECE - III Year">
+
+            <label>Select Event</label>
+            <select id="event">
+                <option value="">Select an event</option>
+                <option value="Paper Presentation">Paper Presentation</option>
+                <option value="Coding Contest">Coding Contest</option>
+                <option value="Quiz Competition">Quiz Competition</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+
+            <p id="message"></p>
+
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+
+        <p>Email: collegefest@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>College Festival Office</p>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Fest. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
